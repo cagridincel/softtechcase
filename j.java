@@ -77,8 +77,6 @@ class ThreadCountOneFile extends Thread
             BufferedReader br = new BufferedReader(new FileReader(_filename));
             String line;
             while ((line = br.readLine()) != null) {
-                // process the line.
-                //System.out.println("---");
                 for (String word: line.split("\\s+")){
                     // trim 
                     word = word.replaceFirst("[^a-zA-Z0-9\\s]*", "");
